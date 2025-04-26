@@ -21,6 +21,7 @@ build: main.o foo.o test.o ## Make build
 coverage: ## Run code coverage
 	gcov main.c foo.c test.c
 
+
 lcov-report: coverage ## Generate lcov report
 	mkdir lcov-report
 	lcov --capture --directory . --output-file lcov-report/coverage.info

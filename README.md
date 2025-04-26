@@ -73,6 +73,10 @@ make build
 # 3. run code coverage
 make coverage
 
+cat main.c.gcov
+cat foo.c.gcov
+cat test.c.gcov
+
 # 4. generate report
 # support lcov and gcovr reports
 # to make report need to install dependencies first

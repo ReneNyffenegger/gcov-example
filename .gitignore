@@ -1,3 +1,6 @@
-.vscode
+main
 *.gcno
+*.gcda
+*.gcov
 *.o
+*.swp
