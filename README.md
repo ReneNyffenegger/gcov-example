@@ -36,9 +36,10 @@ Gcov workflow diagram
 
 There are three main steps:
 
-1. Adding special compile options to the GCC compilation to generate the executable, and `*.gcno`.
-2. Running (testing) the generated executable, which generates the `*.gcda` data file.
-3. With `*.gcno` and `*.gcda`, generate the `gcov` file from the source code, and finally generate the code coverage report.
+1. Adding special compile options to the GCC compilation to generate the executable and `*.gcno` (at build time)
+2. Running the generated executable generates the `*.gcda` data file.
+3. The `gcov` executable creates the `*.c.gcov` files from `*.gcno`, `*.gcda` and  source code files. (Inspect the `*.c.gcov` files to view coverage)
+4  Finally generate the code coverage report.
 
 Here's how each of these steps is done exactly.
 
